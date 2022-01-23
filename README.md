@@ -9,7 +9,7 @@ To build and run this app locally you will need a few things:
 
 # Step 1 — Initializing the Project
 
-- npm init -y OR npm init
+- npm init -y
 
 # Step 2 — Configuring the TypeScript Compiler
 
@@ -33,7 +33,8 @@ To build and run this app locally you will need a few things:
 
 # Step 5 — Updating the package.json File
 
-- "scripts": {
+```json
+"scripts": {
   "start": "cross-env NODE_ENV=development nodemon dist/server.js",
   "build": "rm -rf ./dist && tsc",
   "dev": "cross-env NODE_ENV=development nodemon && ts-node src/server.ts",
@@ -47,3 +48,4 @@ To build and run this app locally you will need a few things:
   "prettier:fix": "prettier --write \"\*\*/_.{js,ts}\"",
   "prepare": "husky install"
   }
+```
