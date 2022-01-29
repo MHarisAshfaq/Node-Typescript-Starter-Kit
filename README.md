@@ -14,16 +14,16 @@ Run `npm run dev` OR `yarn dev` , if everything completes successfully you shoul
 To build and run this app locally you will need a few things:
 
 ```bash
-- Install Node.js
-- Install MongoDB
+ Install Node.js
+ Install MongoDB
 ```
 
 # Step 1 — Add .gitignore, .prettierignore and .eslintignore file in the Project
 
-- .gitignore
+1 - .gitignore
 
 ```bash
-- touch .gitignore
+touch .gitignore
 ```
 
 Add the following to your .gitignore file
@@ -33,7 +33,7 @@ Add the following to your .gitignore file
 node_modules
 
 # Ignore built ts files
-dist/**/*
+build/**/*
 
 # ignore yarn.lock
 yarn.lock
@@ -50,10 +50,10 @@ coverage
 
 ```
 
-- .eslintignore
+2 - .eslintignore
 
 ```bash
-- touch .eslintignore
+touch .eslintignore
 ```
 
 Add the following to your .eslintignore file
@@ -70,10 +70,10 @@ coverage/*
 /src/types/
 ```
 
-- .prettierignore
+3 - .prettierignore
 
 ```bash
-- touch .prettierignore
+touch .prettierignore
 ```
 
 ```json
@@ -85,21 +85,25 @@ coverage
 # Step 2 — Initializing the Project
 
 ```bash
-- npm init -y
+npm init -y
 ```
 
 # Step 3 — Configuring the TypeScript Compiler
 
 ```bash
-- npm i -g typescript
+npm i -g typescript
 ```
 
 ```bash
-- npm install --save-dev typescript
+npm install --save-dev typescript
 ```
 
 ```bash
-- npx tsc --init (default)
+yarn add -D typescript
+```
+
+```bash
+npx tsc --init (default)
 ```
 
 OR
@@ -116,21 +120,21 @@ npx tsc --init --outDir build \
 - NPM
 
 ```bash
-- npm install --save-dev eslint
+npm install --save-dev eslint
 ```
 
 ```bash
-- npx eslint --init
+npx eslint --init
 ```
 
 - YARN
 
 ```bash
-- yarn add -D eslint
+yarn add -D eslint
 ```
 
 ```bash
-- npx eslint --init
+npx eslint --init
 ```
 
 This will ask you a series of questions. For this project we’ll answer the following:
@@ -148,19 +152,19 @@ This will ask you a series of questions. For this project we’ll answer the fol
 - NPM
 
 ```bash
-- npm install --save-dev typescript ts-node nodemon @types/node cross-env prettier
+npm install --save-dev typescript ts-node nodemon @types/node cross-env prettier
 ```
 
 - YARN
 
 ```bash
-- yarn add -D typescript ts-node nodemon @types/node
+yarn add -D typescript ts-node nodemon @types/node cross-env prettier
 ```
 
 # Step 5 — Add a .prettierrc.json File
 
 ```bash
-- touch .eslintignore
+touch .prettierrc
 ```
 
 ```json
