@@ -115,6 +115,8 @@ npx tsc --init --outDir build \
   --module commonjs --noImplicitAny true
 ```
 
+(Note: If tsconfig.json file start showing errors just include any empty ts file)
+
 # Step 4 — Configuring Typescript Linting with eslint
 
 - NPM
@@ -125,6 +127,7 @@ npm install --save-dev eslint
 
 ```bash
 npx eslint --init
+npm init @eslint/config
 ```
 
 - YARN
@@ -135,6 +138,7 @@ yarn add -D eslint
 
 ```bash
 npx eslint --init
+npm init @eslint/config
 ```
 
 This will ask you a series of questions. For this project we’ll answer the following:
