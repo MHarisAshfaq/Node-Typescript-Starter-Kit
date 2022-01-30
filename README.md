@@ -138,8 +138,8 @@ This will ask you a series of questions. For this project we’ll answer the fol
 - Which framework does your project use?: None of these
 - Does your project use TypeScript?: Yes
 - Where does your code run?: Node
-- What format do you want your config file to be in?: JavaScript
-- Finally, you will be prompted to install some additioanl eslint libraries. Choose Yes.
+- What format do you want your config file to be in?: JSON
+- Finally, you will be prompted to install some additional eslint libraries. Choose Yes.
 
 # Step 5 — Installing the devDependencies
 
