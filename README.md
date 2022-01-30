@@ -90,12 +90,9 @@ npm init -y
 
 # Step 3 — Configuring the TypeScript Compiler
 
+If you haven't install typescript globally
 ```bash
 npm i -g typescript
-```
-
-```bash
-npm install --save-dev typescript
 ```
 
 ```bash
@@ -103,7 +100,7 @@ yarn add -D typescript
 ```
 
 ```bash
-npx tsc --init (default)
+npx tsc --init
 ```
 
 OR
@@ -119,17 +116,6 @@ npx tsc --init --outDir build \
 
 # Step 4 — Configuring Typescript Linting with eslint
 
-- NPM
-
-```bash
-npm install --save-dev eslint
-```
-
-```bash
-npx eslint --init
-npm init @eslint/config
-```
-
 - YARN
 
 ```bash
@@ -138,7 +124,6 @@ yarn add -D eslint
 
 ```bash
 npx eslint --init
-npm init @eslint/config
 ```
 
 This will ask you a series of questions. For this project we’ll answer the following:
@@ -153,16 +138,10 @@ This will ask you a series of questions. For this project we’ll answer the fol
 
 # Step 5 — Installing the devDependencies
 
-- NPM
-
-```bash
-npm install --save-dev typescript ts-node nodemon @types/node cross-env prettier
-```
-
 - YARN
 
 ```bash
-yarn add -D typescript ts-node nodemon @types/node cross-env prettier
+yarn add -D typescript ts-node nodemon @types/node express @types/express cross-env prettier
 ```
 
 # Step 5 — Add a .prettierrc.json File
@@ -205,17 +184,11 @@ touch .prettierrc
 
 # Step 6 — Setting up pre-commit hook
 
-- NPM
-
-```bash
-npm install --save-dev husky lint-staged
-
-```
-
 - YARN
 
 ```bash
-npm i -D husky lint-staged
+yarn add -D husky lint-staged
+npx husky install
 
 ```
 

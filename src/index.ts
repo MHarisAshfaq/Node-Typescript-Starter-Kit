@@ -4,4 +4,5 @@ const app: Application = express();
 
 app.listen(process.env.PORT, () => {
   console.log('Node with Typescript');
+  console.log('Node with Typescript');
 });
