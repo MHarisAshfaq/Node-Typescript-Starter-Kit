@@ -151,7 +151,7 @@ yarn add -D typescript ts-node nodemon @types/node @types/express cross-env pret
 yarn add express
 ```
 
-# Step 5 — Add a .prettierrc.json File
+# Step 6 — Add a .prettierrc.json File
 
 ```bash
 touch .prettierrc
@@ -174,7 +174,13 @@ touch .prettierrc
 }
 ```
 
-# Step 6 — Update the package.json File
+# Step 7 — Specify Node version
+
+```bash
+nvm current > .nvmrc
+```
+
+# Step 8 — Update the package.json File
 
 ```json
 "scripts": {
@@ -184,17 +190,22 @@ touch .prettierrc
   "lint": "eslint .",
   "lint:fix": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
   "prettier": "prettier --check \"**/*.{js,ts}\"",
-  "prettier:fix": "prettier --write \"**/*.{js,ts}\"",
-  "prepare": "husky install"
+  "prettier:fix": "prettier --write \"**/*.{js,ts}\""
   }
 ```
 
-# Step 6 — Setting up pre-commit hook
+# Step 9 — Setting up pre-commit hook
 
 ```bash
 yarn add -D husky lint-staged
 npx husky install
 
+```
+
+- Add Script in the `package.json` file
+
+```json
+  "prepare": "husky install"
 ```
 
 - Open `package.json` file and add the following sections:
